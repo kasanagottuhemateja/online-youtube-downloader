@@ -1,0 +1,57 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #0a0a0a;
+    font-family: 'Arial', sans-serif;
+}
+
+.container {
+    text-align: center;
+    padding: 40px;
+    border-radius: 15px;
+    background: rgba(0, 0, 0, 0.8);
+    box-shadow: 0 0 20px #00ffcc, 0 0 40px #00ffcc;
+}
+
+.neon-text {
+    color: #fff;
+    text-shadow: 0 0 5px #00ffcc, 0 0 10px #00ffcc, 0 0 20px #00ffcc;
+    font-size: 2.5em;
+    animation: flicker 1.5s infinite alternate;
+}
+
+input, select, button {
+    margin: 10px;
+    padding: 10px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    background: #1a1a1a;
+    color: #fff;
+    box-shadow: 0 0 10px #00ffcc;
+}
+
+input {
+    width: 300px;
+}
+
+.neon-button {
+    background: #00ffcc;
+    color: #000;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.neon-button:hover {
+    box-shadow: 0 0 20px #00ffcc, 0 0 30px #00ffcc;
+    transform: scale(1.1);
+}
+
+@keyframes flicker {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.8; }
+}

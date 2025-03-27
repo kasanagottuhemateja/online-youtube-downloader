@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neon YouTube Downloader</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="neon-text">YouTube Downloader</h1>
+        <form id="downloadForm">git remote add origin git@github.com:kasanagottuhemateja/online-youtube-download.git
+            <input type="text" id="url" placeholder="Enter YouTube URL" required>
+            <select id="format">
+                <option value="video">Video (MP4)</option>
+                <option value="audio">Audio (MP3)</option>
+            </select>
+            <select id="quality" class="video-quality">
+                <option value="240">240p</option>
+                <option value="360">360p</option>
+                <option value="480">480p</option>
+                <option value="720">720p</option>
+                <option value="1080">1080p</option>
+                <option value="1440">1440p</option>
+                <option value="2160">4K (2160p)</option>
+                <option value="4320">8K (4320p)</option>
+            </select>
+            <button type="submit" class="neon-button">Download</button>
+        </form>
+        <div id="status" class="neon-text"></div>
+    </div>
+    <script src="/static/script.js"></script>
+</body>
+</html>
